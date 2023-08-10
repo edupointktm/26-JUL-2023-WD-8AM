@@ -1,0 +1,21 @@
+*{
+    color:purple
+}
+
+
+
+
+
+p{
+    color:green;
+    border:  dotted red 5px; 
+}
+
+.student{
+    color:red;
+}
+
+#name{
+    color:blue
+}
+
