@@ -4,98 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Broadway</title>
     <style>
-        .header {
-            border-bottom: gray 1px solid;
-            background-color: pink;
-        }
+        
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap');
 
-        .common-header {
-            float: left;
-
-        }
-
-        img {
-            margin-left: 150px;
-        }
-
-        .all-course {
-            margin: 20px 50px 0px 0;
-        }
-
-        .search {
-            margin: 20px 50px 0px 0;
-        }
-
-        .text-search {
-            border-radius: 20px;
-            height: 25px;
-        }
-
-        .contact {
-            margin: 20px 30px 0px 0;
-        }
-
-        .enquiry {
-            margin: 20px 50px 0px 0;
-            background-color: #274595;
-            padding: 15px;
-            color: white;
-            font-size: 15px;
-            font-weight: bold;
-            border-radius: 10px;
-        }
-        nav{
-            clear: both;
-            border: 1px solid rgb(240, 238, 238);
-           
-        }
-        nav ul {
+        *{
             padding: 0;
             margin: 0;
-            list-style: none;
-            margin-left:180px
-        }
-
-        nav ul li{
-            float:left;
-           
-            text-align: center;
-            padding: 15px;
-            margin-left: 40px;
-        }
-        section{
-            clear:both;
-        }
-        .box1{
-            background-color: blue;
-            width: 40%;
-            height: 450px;
-            float:left;
+            box-sizing: border-box;
+            font-family: 'Source Sans 3', sans-serif;
 
         }
-        .box2{
-            background-color: rgb(255, 17, 0);
-            width: 40%;
-            height: 450px;
-            float:left;
+       header{
+         display: flex;
+         justify-content: space-evenly;
+         border-bottom: 1px solid rgb(205, 205, 205);
+         padding: 10px 0; 
+       }
+       nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 15px 0;
+       }
+       nav ul li{
+        width: 150px;
+        text-align: center;
+        position: relative;
+       }
 
-        }
-        .box2 img{
-            width: 150%;
-            height: 100%;
-        }
-        .box3{
-            background-color: rgb(119, 255, 0);
-            width: 20%;
-            height: 450px;
-            float:left;
+       nav ul li span{
+        background-color: #EC6705;
+        color: white;
+        font-size: 13px;
+        padding: 3px;
+        border-radius: 3px;
+        position: absolute;
+        left: 140px;
+        bottom:8px;
 
-        }
+       }
+
+       section{
+        display: flex;
+       }
+       section .left{
+        background-color: #274595;
+        width: 45%;
+        height: 400px;
+        color: white;
+        padding: 50px;
+
+        
+       }
+       section .left h2{
+        padding: 10px 0;
+        font-size: 35px;
+        font-weight:  bold;
+       }
+       section .left h4{
+        padding: 10px 0;
+        font-size: 18px;
+       }
+       section .left p{
+        padding: 0 0 15px 0;
+        font-size: 18px;
+        line-height: 23px;
+       }
+       .admission{
+        background-color: #81e9e6;
+        padding: 10px;
+        width: 260px;
+        text-align: center;
+        color: darkblue;
+        font-size: 13px;
+        border-radius: 5px;
+        font-weight: normal;
+
+       }
+       .admission:hover{
+         background-color: #00BBB6;
+         color:white;
+       }
+       section .middle{
+        background-color: rgb(68, 0, 255);
+        width: 35%;
+        height: 400px;
+
+        
+       }
+       section .middle img{
+        width: 100%;
+        height: 100%;
+       }
+       section .right{
+        background-color: rgb(106, 255, 0);
+        width: 20%;
+        height: 400px;
+        object-fit: cover;
+
+        
+       }
+
+       section .right .up{
+        background-color: #2A6FDB;
+        padding: 25px;
+        color:white
+       }
+
+       section .right .up .icon{
+        font-size: 70px;
+       }
+       
+       
     </style>
 </head>
 
@@ -105,7 +128,7 @@
         <div class="logo common-header">
             <img src="https://broadwayinfosys.com/uploads/logo/1667276403.new_broadway_logo.svg" width="50%">
         </div>
-        <div class="all-course common-header"><i class="fa-solid fa-bars"></i>&nbsp;&nbsp; All Courses</div>
+        <div class="all-course common-header"><i class="fa-solid fa-bars"></i> &nbsp;&nbsp; All Courses</div>
         <div class="search common-header"> <input type="text" size="40" class="text-search"></div>
         <div class="contact common-header">
 
@@ -120,23 +143,46 @@
         <ul>
             <li>Success Gallery</li>
             <li>Student Testimonials</li>
-            <li>Upcoming Classes</li>
-            <li>Career</li>
+            <li>Upcoming Classes
+                <span>39</span>
+            </li>
+            <li>Career
+                
+            </li>
             <li>Contact Us</li>
             <li>Blog</li>
         </ul>
     </nav>
 
     <section>
-        <div class="box1"></div>
-        <div class="box2">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxhtmBqlJilp6X2q2XsYxJ9DVYb_F8x17DjIOJcHtT&s" alt="">
+        <div class="left">
+            <h2>
+                Building Global IT Professionals since 2008
+            </h2>
+            <h4>
+                AN ISO 9001:2015 CERTIFIED IT LEARNING CENTER
+            </h4>
+            <p>Broadway Infosys is one of the best inclusive computer training institutes in Kathmandu, Nepal. Established in 2008, our professional IT Training and Development center has been employing experts in this field to impart professional education.</p>
+            <div class="admission"><p> GET ADMISSION NOW &nbsp; &nbsp;  <i class="fa-solid fa-arrow-right icon"></i></p></div>
         </div>
-        <div class="box3">
+        <div class="middle">
+            <img src="https://broadwayinfosys.com/uploads/slider/168724832745594.jpg" alt="">
             
+        </div>
+        <div class="right">
+                <div class="up">
+                        <div><i class="fa-solid fa-graduation-cap icon"></i></div>
+                        <h2> 70 <sup>+</sup></h2>
+                </div>
+                <div></div>
+
+                <div class="down">
+
+                </div>
         </div>
     </section>
 
+    
 </body>
 
 </html>
