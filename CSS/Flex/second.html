@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: pink;
+            border: 5px solid black;
+            /* width: 800px; */
+            height: 600px;
+            display: flex;
+            gap: 3px;
+
+
+            flex-flow: row nowrap;
+
+            /* justify-content: start;
+            align-items: end; */
+
+            /* justify-content: space-between; */
+
+        }
+        .sub-box{
+            display: flex;
+            gap:5px;
+        }
+
+        .box {
+            flex-shrink: 1;
+           
+            text-align: center;
+            line-height: 150px;
+
+        }
+
+        .box1 {
+
+            background-color: rgb(17, 255, 0);
+            width: 150px;
+            height: 150px;
+            /* flex-basis: 600px; */
+        }
+
+        .box2 {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box3 {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            flex-grow: 1;
+        }
+
+        .box4 {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box5 {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box6 {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box1 box">Box One</div>
+        
+            <!-- <div class="box2 box">Box Two</div>
+            <div class="box3 box">Box Three</div>
+            <div class="box4 box">Box Four</div>
+            <div class="box5 box">Box Five</div>
+            <div class="box6 box">Box Six</div> -->
+      
+    </div>
+</body>
+
+</html>
