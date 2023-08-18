@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;         
+        }
+
+        .nav ul li {
+            float: left;
+            width: 130px;
+            line-height: 25px;
+            text-align: center;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+
+        }
+        .nav ul ul {
+            display: none;
+        }
+
+        .nav ul li:hover>ul {
+            display: block;
+           
+        }
+        .nav ul li:hover{
+            background-color: orange;
+            color: rgb(6, 6, 6);
+        }
+        .nav ul ul li {
+
+            position: relative;
+        }
+
+        .nav ul ul ul {
+            /* display: none; */
+            position: absolute;
+            top: 0%;
+            left: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About
+                <ul>
+                    <li>Personal</li>
+                    <li>Home</li>
+                    <li>Business </li>
+                </ul>
+            </li>
+            <li>Services
+                <ul>
+                    <li>Graphics Design</li>
+                    <li>Web Design</li>
+                    <li>Marketing</li>
+                    <li>Branding
+                        <ul>
+                            <li>Corporate Branding</li>
+                            <li>Personal Branding</li>
+                            <li>Place Branding</li>
+                            <li>Digital Branding </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+
+</html>
