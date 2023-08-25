@@ -46,4 +46,47 @@ header .nav ul li a {
 }
 header .nav ul li a:hover {
   color: yellow;
+}
+
+section {
+  background-color: red;
+  height: 600px;
+  background-image: url(https://prabhatmallik.com.np/html/05/assets/images/banner-01.jpg);
+}
+section .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .banner {
+  width: 800px;
+  margin: auto;
+  padding-top: 250px;
+}
+section .banner h2 {
+  color: rgb(247, 247, 247);
+  font-size: 40px;
+  font-weight: bold;
+}
+section .banner h3 {
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+  background-color: white;
+}
+section .banner h3 span {
+  color: red;
+}
+
+footer {
+  height: 100px;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer h1 {
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

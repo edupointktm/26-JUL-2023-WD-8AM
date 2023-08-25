@@ -1,0 +1,17 @@
+footer{
+    height: 100px;
+    background-color: $green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    h1{
+        width: 100%;
+        display: block;
+        
+        color: white;
+        text-align: center;
+        
+    }
+
+}
