@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        p{
+            
+            padding: 15px;
+            color: red;
+            font-weight: bold;
+        }
+
+        p::after{
+            content: " Thank you";
+            color:green;
+        }
+        p::before{
+            content: "Mr. ";
+            color:blue;
+            /* background-color: pink; */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            transform: rotate(45deg);
+           
+        }
+
+        .box:hover{
+            transform: scale(1.5);
+            transition: 3s;
+        }
+         .box::after{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top:-90px;
+            left: 0px;
+            border-radius: 50%;
+            
+            
+        }
+        .box::before{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: red;
+             position: absolute;
+            top:0px;
+            left: -96px;
+            border-radius: 50%;
+           
+        } 
+    </style>
+</head>
+<body>
+    <!-- <p> Ram Kuamr Sah</p>
+    <p> Mohan Dhakal</p>
+    <p> Hari Om Regmi</p>
+    <p> Sunil Pokharel</p>
+    <p> Prabhat Kumar Mallik</p>
+    <p> Sujit Kumar Nepali</p>
+    <br> <br> -->
+
+    <div class="box"></div>
+</body>
+</html>
