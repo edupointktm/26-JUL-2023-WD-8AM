@@ -14,3 +14,31 @@ section {
         text-align: center;
     }
 }
+
+.navbar-nav .nav-link.active{
+    background-color: #80b421;
+    color: white;
+    border-radius: 10px;
+}
+
+.navbar-nav{
+    .nav-link{
+
+        &:hover{
+            color:rgb(81, 255, 0);
+        }
+    }
+}
+
+.carousel-caption{
+    bottom: 200px;
+    h1{
+        background-color: #81b42188;
+        display: inline-block;
+        padding: 0   50px;
+    }
+    h3{
+        color: black;
+        text-shadow: 2px 2px 3px white;
+    }
+}
