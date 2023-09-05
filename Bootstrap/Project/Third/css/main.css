@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-menu {
+  background-color: rgb(189, 189, 189);
+  border-radius: 0 0 10px 10px;
+}
+.top-menu ul li {
+  padding: 0 0 0 15px;
+}
+.top-menu ul li a {
+  color: black;
+}
+
+.list {
+  overflow: auto;
+  height: 470px;
+}
+
+.img-size {
+  height: 300px;
+}
+.img-size img {
+  height: 100%;
+}
+
+.card {
+  position: relative;
+}
+.card .sale {
+  background-color: red;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  transform: rotate(-45deg);
+  display: inline-block;
+  width: 100px;
+}/*# sourceMappingURL=main.css.map */
