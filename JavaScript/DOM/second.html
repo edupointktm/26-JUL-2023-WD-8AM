@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick ="document.querySelector('h1').style.color='red'">Red</button>
+    <button onclick="document.querySelector('#content').classlist.add('hide')">Hide</button>
+    <button onclick="document.querySelector('#content').classList.add('hide')">Test for hide</button>
+    <button onclick="document.querySelector('#content').classlist.remove('hide')"> Show</button>
+    <button onclick="document.querySelector('#content').classlist.toggle('hide')"> Show/Hide</button>
+
+    <button id="sh" value="hide" onclick="showhide()">Hide</button>
+    
+    <h1 id="content" > BROADWAY INFOSYS </h1>
+
+    <script>
+        function showhide()
+        {
+            var getname = document.querySelector('#sh').value;
+            if(getname=="hide"){
+                document.querySelector('#sh').innerHTML="Show"
+                document.querySelector('#sh').value="show"
+                document.querySelector('#content').classList.toggle('hide')
+            }
+            else{
+                document.querySelector('#sh').innerHTML="Hide"
+                document.querySelector('#sh').value="hide"
+                document.querySelector('#content').classList.toggle('hide')
+            }
+        }
+    </script>
+</body>
+</html>
