@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .hide{
+        .hide {
             display: none;
         }
     </style>
 </head>
+
 <body>
-    <button onclick ="document.querySelector('h1').style.color='red'">Red</button>
+    <button onclick="document.querySelector('h1').style.color='red'">Red</button>
     <button onclick="document.querySelector('#content').classlist.add('hide')">Hide</button>
     <button onclick="document.querySelector('#content').classList.add('hide')">Test for hide</button>
     <button onclick="document.querySelector('#content').classlist.remove('hide')"> Show</button>
     <button onclick="document.querySelector('#content').classlist.toggle('hide')"> Show/Hide</button>
 
-    <button id="sh" value="hide" onclick="showhide()">Hide</button>
-    
-    <h1 id="content" > BROADWAY INFOSYS </h1>
+    <button id="sh" onclick="showHide()">Hide</button>
 
+    <h1 id="content"> BROADWAY INFOSYS </h1>
+    <hr>
+
+    <input type="color" name="" id="color"> <button onclick="changeColor()">Change</button>
+
+    <select id="font-size" onchange="fontSize()">
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+    </select>
+    <div class="content1"> Broadway Infosys </div>
+    <hr>
+    <button id="on-off" onclick="onOff()">ON</button> <br><br>
+    <img id="image" src="https://prabhatmallik.com.np/dom/image/OFF.jpg" alt="" width="25%">
     <script>
-        function showhide()
-        {
-            var getname = document.querySelector('#sh').value;
-            if(getname=="hide"){
-                document.querySelector('#sh').innerHTML="Show"
-                document.querySelector('#sh').value="show"
-                document.querySelector('#content').classList.toggle('hide')
+
+        onOff=()=>{
+            var get_value=document.querySelector('#on-off').innerHTML
+            if(get_value=="ON"){
+                document.querySelector('#on-off').innerHTML="OFF"
+                
+                document.querySelector('img').src="https://prabhatmallik.com.np/dom/image/ON.jpg"
+            }
+            else{
+            document.querySelector('#on-off').innerHTML="ON"
+            document.querySelector('img').src="https://prabhatmallik.com.np/dom/image/OFF.jpg"
+            }
+            
+        }
+        
+        
+        fontSize = ()=>{
+            var get_fs = document.querySelector('#font-size').value
+            console.log(get_fs)
+            document.querySelector('.content1').style.fontSize=get_fs+"px"
+        }
+
+        changeColor=()=>{
+           var get_color =   document.querySelector('#color').value
+        //    console.log(get_color)
+            document.querySelector('.content1').style.color = get_color;
+
+        }
+
+        function showHide() {
+            var get_value = document.querySelector('#sh').innerHTML
+            console.log(get_value)
+            var get_value = document.querySelector('#sh').innerHTML
+            if (get_value == "Hide") {
+                document.querySelector('#sh').innerHTML = "Show"
+                
             }
             else{
                 document.querySelector('#sh').innerHTML="Hide"
-                document.querySelector('#sh').value="hide"
-                document.querySelector('#content').classList.toggle('hide')
+                
             }
+            document.querySelector('#content').classList.toggle('hide')         
+
         }
     </script>
 </body>
+
 </html>
