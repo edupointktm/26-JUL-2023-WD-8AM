@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bars1,
+        .bars2,
+        .bars3 {
+            border: 2px solid black;
+            /* height: 1px; */
+            width: 30px;
+            margin: 3px;
+        }
+
+        .onoff .bars2 {
+            opacity: 0;
+            ;
+        }
+
+        .onoff .bars1 {
+            transform: rotate(45deg) translate(6px, 7px);
+        }
+
+        .onoff .bars3 {
+            transform: rotate(-45deg) translate(2px, -3px);
+        }
+
+        .sidebaroff{
+            display: block;
+            background-color: black;
+            color: white;
+            width: 250px;
+        }
+        .section{
+            display: flex;
+        }
+        .sidebar {
+            background-color: black;
+            color: white;
+            width: 250px;
+            /* height: 100px; */
+            display: none;
+
+        }
+
+        
+
+        .sidebar ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 5px 5px 5px 15px;
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="bars" onclick="bars()">
+        <div class="bars1"></div>
+        <div class="bars2"></div>
+        <div class="bars3"></div>
+    </div> -->
+    <hr> <br>
+    <div class="section">
+    <div class="sidebar">
+        <ul>
+            <li>Gallery</li>
+            <li>Gallery</li>
+            <li>Gallery</li>
+            <li>Gallery</li>
+        </ul>
+       
+    </div>
+    <div class="bars" onclick="bars()">
+        <div class="bars1"></div>
+        <div class="bars2"></div>
+        <div class="bars3"></div>
+    </div>
+    </div>
+
+    
+    <script>
+        bars = () => {
+            document.querySelector('.bars').classList.toggle('onoff')
+            document.querySelector('.sidebar').classList.toggle('sidebaroff')
+        }
+    </script>
+</body>
+
+</html>
