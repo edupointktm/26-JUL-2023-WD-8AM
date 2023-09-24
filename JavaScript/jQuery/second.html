@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <label>Width :</label>
+    <input type="number" id="width">
+    <label for="">Height :</label>
+    <input type="number" id="height">
+    <button id="animate">Animate</button>
+    <button id="stop">Stop</button> <br> <br>
+    <div class="box"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+       $('#animate').click(function(){
+           var get_width = $('#width').val()
+           var get_height = $('#height').val()
+           
+            $('.box').animate({
+                width:get_width, 
+                height:get_height
+            },4000)
+       })
+        
+        $('#stop').click(function(){
+            $('.box').stop()
+        })
+
+    </script>
+</body>
+</html>

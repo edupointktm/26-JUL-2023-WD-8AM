@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button id="chnage-color"> color Red </button>
+    <button id =bg-color> bg yellow</button>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="show-hide">Hide/Show</button>
+    <button id ="animate">Animate</button>
+
+    <h1> Broadway Infosys</h1>
+  <div class="box"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+       $('#chnage-color').click(function(){
+           $('h1').css("color","red")
+       })
+
+       $('#bg-color').click(function(){
+          $('h1').css("background-color","yellow")
+       })
+
+       $('#hide').click(function(){
+         $('h1').hide(3000)
+       })
+
+       $('#show').click(function(){
+          $('h1').show(3000)
+       })
+
+       $('#show-hide').click(function(){
+         $('h1').toggle(3000)
+       })
+
+
+    </script>
+</body>
+</html>

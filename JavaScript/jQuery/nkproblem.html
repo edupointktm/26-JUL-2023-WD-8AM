@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="text-effect" onchange="textEffect()">
+        <option value="all">All</option>
+        <option value="bd">Bold</option>
+        <option value="it">Italic</option>
+        <option value="ul">Underline</option>
+        <option value="bd&it">Bold & Italic</option>
+        <option value="bd&ul">
+            Bold & Underline
+        </option>
+        <option value="it&ul">
+            Italic & Underline
+        </option>
+        <option value="none">None</option>
+    </select>
+    <div class="text">Mr.Nikesh Kumar</div>
+
+    <script>
+        textEffect = () => {
+            var get_effect = document.querySelector('#text-effect').value
+
+            if (get_effect == "bd") {
+                document.querySelector(".text").style.textDecoration="italic";
+            }
+            else if (get_effect == "it") {
+               
+            }
+
+        };
+        //   C_italic = () => {
+        //     document.querySelector("h3").style.fontStyle = "italic";
+        //   };
+        //   C_Underline = () => {
+        //     document.querySelector("h3").style.textDecoration = "Underline";
+        //   };
+        //   C_Bold_italic = () => {
+        //     document.querySelector("h3").style.fontWeight = "bold";
+        //     document.querySelector("h3").style.fontStyle = "italic";
+        //   };
+        //   C_Bold_Underline = () => {
+        //     document.querySelector("h3").style.fontWeight = "bold";
+        //     document.querySelector("h3").style.textDecoration = "Underline";
+        //   };
+        //   C_italic_Underline = () => {
+        //     document.querySelector("h3").style.fontStyle = "italic";
+        //     document.querySelector("h3").style.textDecoration = "Underline";
+        //   };
+        //   None = () => {};
+    </script>
+</body>
+
+</html>
