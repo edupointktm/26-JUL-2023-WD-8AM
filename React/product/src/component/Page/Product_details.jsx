@@ -4,6 +4,7 @@ import Data from '../../../src/Data'
 function Product_details() {
     let {pro_id} =useParams()
 let get_data = Data.find((gd)=> gd.id==pro_id)
+    console.log(get_data)
   return (
     <>
         <div className="container">
